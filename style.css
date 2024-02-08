@@ -6,3 +6,6 @@ body {
     text-align: center;
 }
 
+.header {
+    border-bottom: ridge;
+}
