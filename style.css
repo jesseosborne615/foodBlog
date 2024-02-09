@@ -1,11 +1,105 @@
-body {
-    background-color: rgb(243, 238, 247);
-    font-family: cursive,sans;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Cormorant', serif;
     padding: 20px;
-    background: #f3eae8;
+    background: #f1e8f3;
     text-align: center;
-}
+    
+  }
 
-.header {
-    border-bottom: ridge;
-}
+
+  ul {
+    
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    
+  
+   
+  }
+  
+  li {
+    
+    float: left;
+    border-right: 1px solid #bbb;
+    
+  }
+  
+  li a {
+    display: block;
+    color: rgb(123, 95, 95);
+   
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #aeaaaa;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+
+  .header {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    
+    color: #111;
+    
+
+  }
+  
+  .leftcolumn { 
+    float: left;
+    width: 75%;
+  }
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+  .aboutMeCard {
+    height: 200%;
+    text-align: center;
+    background-color: white;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+ 
+  .postHeadings {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn { 
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  #more {display: none;}
